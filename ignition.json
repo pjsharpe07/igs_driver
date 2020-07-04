@@ -1,0 +1,14 @@
+{
+  "ignition": { "version": "2.2.0" },
+  "storage": {
+    "files": [{
+      "filesystem": "root",
+      "path": "/foo/bar",
+      "mode": 420,
+      "contents": {
+        "source": "http://example.com/asset",
+        "verification": { "hash": "sha512-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef" }
+      }
+    }]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "tags": [
+    {
+      "valueSource": "memory",
+      "dataType": "Boolean",
+      "alarms": [
+        {
+          "setpointA": 1,
+          "name": "Above Normal"
+        }
+      ],
+      "name": "Boolean Tag",
+      "value": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "Boolean",
+      "name": "One Shot Trigger",
+      "tagGroup": "Driven One Shot",
+      "value": true,
+      "tagType": "AtomicTag",
+      "enabled": true
+    },
+    {
+      "valueSource": "opc",
+      "opcItemPath": "ns\u003d1;s\u003d[Generic]_Meta:Random/RandomDouble1",
+      "dataType": "Float8",
+      "name": "Pressure3",
+      "tagGroup": "Driven One Shot",
+      "tagType": "AtomicTag",
+      "enabled": true,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "opc",
+      "opcItemPath": "ns\u003d1;s\u003d[Generic]_Meta:Random/RandomDouble2",
+      "dataType": "Float8",
+      "name": "Thickness3",
+      "tagGroup": "Driven One Shot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}
